@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔓 Decrypt a Message from an Image</h1>
+
+        <form action="/decrypt" method="post" enctype="multipart/form-data">
+            <label>Upload Encrypted Image:</label>
+            <input type="file" name="image" required>
+
+            <label>Enter Passcode:</label>
+            <input type="password" name="user_password" placeholder="Enter your passcode" required>
+
+            <button type="submit">Decrypt 🔓</button>
+        </form>
+
+        <p><a href="/encrypt_page">Go to Encryption Page</a></p>
+    </div>
+</body>
+</html>
