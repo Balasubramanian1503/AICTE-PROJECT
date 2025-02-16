@@ -1,179 +1,53 @@
-Here's a README.md file optimized for GitHub, including badges, setup instructions, and contribution guidelines.
-
-
-
-🔐 Image Encryption & Decryption using Flask
-
-
-
-
-
-
-
-
-
-
-
-🔹 A Flask-based web app that allows users to hide a secret message inside an image and decrypt it later using a passcode.
-
-
-
-🚀 Live Demo
-
-
-🌐 Try it here (if deployed)
-
-
-
-📌 Features
-
-
-✅ Encrypt messages inside an image
-
-✅ Decrypt hidden messages using a passcode
-
-✅ User-friendly web interface
-
-✅ Supports PNG, JPG images
-
-✅ Uses OpenCV for pixel-level encryption
-
-
-
-🛠 Tech Stack
-
-
+SECURE THE DATA TO PREVENT HACKERS:
+ REQUIRED TOOL:
 Backend: Flask (Python), OpenCV
 Frontend: HTML, CSS
 Libraries Used: Flask, NumPy, OpenCV
 
+image-encryption-flask
+ 1) static
+    i) uploads (Stores uploaded & encrypted images)
+    ii)styles.css (CSS for styling)
+ 2) templates
+    i)encrypt.html (Encryption Page)
+    ii)decrypt.html (Decryption Page)
+ 3) app.py (Main Flask application)
+ 4) README.md (Project Documentation)
+ 5) requirements.txt (Dependencies List)
+ 6) .gitignore (Files to exclude from Git)
 
-
-📂 Project Structure
-
-
-📦 image-encryption-flask
- ┣ 📂 static
- ┃ ┣ 📂 uploads (Stores uploaded & encrypted images)
- ┃ ┗ 📜 styles.css (CSS for styling)
- ┣ 📂 templates
- ┃ ┣ 📜 encrypt.html (Encryption Page)
- ┃ ┗ 📜 decrypt.html (Decryption Page)
- ┣ 📜 app.py (Main Flask application)
- ┣ 📜 README.md (Project Documentation)
- ┣ 📜 requirements.txt (Dependencies List)
- ┗ 📜 .gitignore (Files to exclude from Git)
-
-
-
-
-🚀 Installation & Setup
-
-
-1️⃣ Clone the Repository
-
-
-git clone https://github.com/your-username/image-encryption-flask.git
-cd image-encryption-flask
-
-
-
-2️⃣ Create a Virtual Environment (Optional but Recommended)
-
-
-python -m venv venv
-source venv/bin/activate  # For macOS/Linux
-venv\Scripts\activate  # For Windows
-
-
-
-3️⃣ Install Dependencies
-
-
+-> Install Dependencies
 pip install -r requirements.txt
 
-
-
-4️⃣ Run the Flask App
-
-
+-> Run the Flask App
 python app.py
 
+Usage Guide
+
+=> Encryption (Hiding Message in Image)
 
 
-The app will be available at:
+1️) Open http://127.0.0.1:5000/encrypt_page
 
-📌 http://127.0.0.1:5000/
+2️) Upload an image
 
+3️) Enter your secret message
 
+4️) Set a passcode
 
-🎯 Usage Guide
-
-
-🔒 Encryption (Hiding Message in Image)
-
-
-1️⃣ Open http://127.0.0.1:5000/encrypt_page
-
-2️⃣ Upload an image
-
-3️⃣ Enter your secret message
-
-4️⃣ Set a passcode
-
-5️⃣ Click "Encrypt & Download" to save the encrypted image
+5️) Click "Encrypt & Download" to save the encrypted image
 
 
-🔓 Decryption (Extracting Message)
+=> Decryption (Extracting Message)
 
 
-1️⃣ Open http://127.0.0.1:5000/decrypt_page
+1️) Open http://127.0.0.1:5000/decrypt_page
 
-2️⃣ Upload the encrypted image
+2️) Upload the encrypted image
 
-3️⃣ Enter the correct passcode
+3️) Enter the correct passcode
 
-4️⃣ Click "Decrypt" to reveal the hidden message
-
-
-
-🛠 Troubleshooting & Fixes
-
-
-Flask not installed? Run:
-
-pip install flask
-
-
-
-App not running? Ensure you're in the correct directory and using the virtual environment.
-Issues with OpenCV? Try reinstalling:
-
-pip install opencv-python numpy
-
-
-
-
-
-
-🌟 Contributing
-
-
-Contributions are welcome! Follow these steps to contribute:
-
-
-Fork the repository
-Create a new branch (git checkout -b feature-branch)
-Make your changes and commit (git commit -m "Added a new feature")
-Push the changes (git push origin feature-branch)
-Open a Pull Request
-
-
-
-
-
-
-
+4️) Click "Decrypt" to reveal the hidden message
 
 
 
